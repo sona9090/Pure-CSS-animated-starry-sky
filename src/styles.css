@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  font-family: sans-serif;
+  background: black;
+  overflow: hidden;
+}
+
+#starfield {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(blue, indigo, black 60%);
+  animation: rotateTheSky 5s infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes rotateTheSky {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 30px white;
+  animation: dotPath 3s ease-in-out infinite;
+}
+
+.dot1 {
+  width: 1px;
+  height: 1px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 30px white;
+  position: relative;
+  top: -50px;
+  left: 100px;
+  animation: dotPath 3s ease-in-out infinite;
+}
+
+.dot2 {
+  width: 3px;
+  height: 3px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 30px white;
+  position: relative;
+  top: -200px;
+  left: -100px;
+  animation: dotPath2 3s ease-in-out infinite;
+}
+
+.dot3 {
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 30px white;
+  position: relative;
+  top: -100px;
+  left: 10px;
+  animation: dotPath2 3s ease-in-out infinite;
+}
+
+.dot4 {
+  width: 5px;
+  height: 5px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 30px white;
+  position: relative;
+  top: 250px;
+  left: -50px;
+  animation: dotPath2 3s ease-in-out infinite;
+}
+
+.dot5 {
+  width: 1px;
+  height: 1px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 30px white;
+  position: relative;
+  top: 150px;
+  left: 50px;
+  animation: dotPath 3s ease-in-out infinite;
+}
+
+.dot6 {
+  width: 1px;
+  height: 1px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 30px white;
+  position: relative;
+  top: 300px;
+  left: -50px;
+  animation: dotPath 3s ease-in-out infinite;
+}
+
+.dot7 {
+  width: 1px;
+  height: 1px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 30px white;
+  position: relative;
+  top: 0;
+  left: -50px;
+  animation: dotPath 3s ease-in-out infinite;
+}
+
+.dot8 {
+  width: 3px;
+  height: 3px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 30px white;
+  position: relative;
+  top: 80px;
+  left: -150px;
+  animation: dotPath2 1s ease-in-out infinite;
+}
+
+.dot9 {
+  width: 3px;
+  height: 3px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 30px white;
+  position: relative;
+  top: -80px;
+  left: 300px;
+  animation: dotPath2 5s ease-in-out infinite;
+}
+
+.dot10 {
+  width: 1px;
+  height: 1px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 30px white;
+  position: relative;
+  top: 180px;
+  left: 0;
+  animation: dotPath2 5s ease-in-out infinite;
+}
+
+.dot11 {
+  width: 1px;
+  height: 1px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 5px yellow;
+  position: relative;
+  top: 180px;
+  left: 0;
+  animation: dotPath2 2s ease-in-out infinite;
+}
+
+.dot12 {
+  width: 3px;
+  height: 3px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 15px yellow, 0 0 15px white;
+  position: relative;
+  top: -200px;
+  left: 55px;
+  animation: dotPath2 2s ease-in-out infinite;
+}
+
+.dot13 {
+  width: 1px;
+  height: 1px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 15px yellow, 0 0 15px white;
+  position: relative;
+  top: -250px;
+  left: -55px;
+  animation: dotPath2 2s ease-in-out infinite;
+}
+
+.dot14 {
+  width: 5px;
+  height: 5px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 30px 15px lightsteelblue, 0 0 15px white;
+  position: relative;
+  animation: dotPath2 2s ease-in-out infinite;
+}
+
+.dot15 {
+  width: 1px;
+  height: 1px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: -100px 15px yellow, 0 0 15px white;
+  position: relative;
+  animation: dotPath2 5s ease-in-out infinite;
+}
+
+@keyframes dotPath2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(30vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes dotPath {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
